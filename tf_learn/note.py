@@ -9,11 +9,17 @@ zeros_similiar=tf.zeros_like(constant_tsr)
 ones_similiar=tf.ones_like(constant_tsr)
 
 3.序列张量
-
-
+np.linspace()
+np/tf.range()
+4.随机张量
+tf.random_uniform([row_dim,col_dim],minval,maxval)
+tf.random_normal([row_dim,col_dim],mean,stddev)
+tf.truncated_normal([row_dim,col_dim],mean,stddev)
+tf.random_shuffle(input_tensor)
+rf.random_crop(input_tensor,cropsize)
 
 #创建变量并初始化
-my_var=tf.Variable(tf.zeros([2,3]))
+my_var=tf.Variable(tf.zeros([2,3]))#封装向量，可以用numpy，Python列表，tensor
 sess=tf.Session()
 initialize_op=tf.global_variables_initializer()
 sess.run(initialize_op)
@@ -26,3 +32,7 @@ x_vals=np.random.ran(2,2)
 sess.run(y,feed_dict{x:x_vals})
 #Note that sess.run(x,feed_dict={x:x_vals}) will result in a self-referencing error
 #占位符上必须执行至少一个操作
+
+#global_variables_initializer()一次性初始化所有变量
+#但是，若要基于已经初始化的变量进行初始化，则必选按序初始化
+
