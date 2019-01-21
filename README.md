@@ -1,7 +1,7 @@
 # LEEN
 Implementations of a model described in the following paper related to sequence matching:
 
-- [LEEN: an novel bio-event normalization method based on calculating semantic similarity](https://arxiv.org/abs/1512.08849) by ××(with link)
+- [LEEN: an novel bio-event normalization method based on calculating semantic similarity](https://arxiv.org/abs/1512.08849) by ×××
 
 ## Requirements
 - [Torch7](https://github.com/torch/torch7) with specifying Lua 5.2 (otherwise you will meet [LuaJIT memory issue](https://github.com/OpenNMT/OpenNMT/issues/26))
