@@ -33,7 +33,7 @@ Implementations of a model described in the following paper related to sequence 
 import leen.leen.test as le
 ```
 
-5. Then you can use our provided functions, simply prefixing `le.` now, click [FunctionUsage](##FunctionUsage) for more function details.
+5. Then you can use our provided functions, simply prefixing `le.` now, view [FunctionUsage](##FunctionUsage) for more function details.
 ```python
 le.predict_sim("EBI-2625447",s1) # one usage example of predict_sim(str,str)
 le.tran_stat("EBI-2638567") # one usage example of tran_stat(str)
@@ -43,7 +43,7 @@ le.tran_stat("EBI-2638567") # one usage example of tran_stat(str)
 We have developed two functions for you as following:
 * predict_sim(str *EBI-id*,str *description*)
 	* a function judging whether an *EBI-id* correspond to a *description*，return True/False 
-    	* input:str *EBI-id*(the accession number of the interaction in the IntAct database),str *description*(a senctence describing an interaction)
+    * input:str *EBI-id*(the accession number of the interaction in the IntAct database),str *description*(a senctence describing an interaction)
 	* return:bool *True/False*
 
 * tran_stat(str *EBI-id*)
