@@ -19,7 +19,7 @@ Implementations of a model described in the following paper related to sequence 
   * ```sudo apt-get update```
   * ```sudo apt-get install git```
 
-2. To include our libary in your working project , ensure you have entered your project directory - in other words, be sure that you are working under directory `MyProject/` 
+2. Ensure you have entered the top-level folder of your project directory - in other words, be sure that you are working under directory `MyProject/` 
 
 3. Clone the project from gitlab into your Project, you can either choose to Clone it with SSH or HTTPS:
 
@@ -40,11 +40,11 @@ le.tran_stat("EBI-2638567") # one usage example of tran_stat(str)
 ```
 
 ## FunctionUsage
-We have developed two functions for users as following:
+We have developed two functions for you as following:
 * predict_sim(str *EBI-id*,str *description*)
 	* a function judging whether an *EBI-id* correspond to a *description*，return True/False 
-    * input:str *EBI-id*(the accession number of the interaction in the IntAct database),str *description*(a senctence describing an interaction)
-	* output:bool *True/False*
+    	* input:str *EBI-id*(the accession number of the interaction in the IntAct database),str *description*(a senctence describing an interaction)
+	* return:bool *True/False*
 
 * tran_stat(str *EBI-id*)
 	* a fuction getting the *description* corresponding to an *EBI-id*
