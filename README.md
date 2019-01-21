@@ -15,11 +15,11 @@ Implementations of a model described in the following paper related to sequence 
 
 ## Usage
 
-1. To use our libary in your project, you have to clone our this project into your current working project (presumbly named `MyProject`) . So if you haven't get Git, just install it with the following steps:
+1. To use our libary in your project, you have to clone our this project into your current working directory (presumbly named `MyProject`) . So if you haven't get Git, just install it with the following steps:
   * ```sudo apt-get update```
   * ```sudo apt-get install git```
 
-2. To include our libary in your working project , ensure you have accessed into your project directory - so be sure to `cd MyProject` 
+2. To include our libary in your working project , ensure you have entered your project directory - in other words, be sure that you are working under directory `MyProject/` 
 
 3. Clone the project from gitlab into your Project, you can either choose to Clone it with SSH or HTTPS:
 
