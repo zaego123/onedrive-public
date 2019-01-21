@@ -33,21 +33,21 @@ Implementations of a model described in the following paper related to sequence 
 import leen.leen.test as le
 ```
 
-5. Then you can use our provided functions with the prefix `le.` now, click [FunctionUsage](#FunctionUsage) for more function details.
+5. Then you can use our provided functions, simply prefixing `le.` now, click [FunctionUsage](#FunctionUsage) for more function details.
 ```python
-le.tran_stat("EBI-2638567")
-le.predict_sim("EBI-2625447",s1)
+le.predict_sim("EBI-2625447",s1) # one usage example of predict_sim(str,str)
+le.tran_stat("EBI-2638567") # one usage example of tran_stat(str)
 ```
 
 ## FunctionUsage
 We have developed two functions for users as following:
-* same(str *EBI-id*,str *sentence*)
-	* a function judging whether a EBI-id correspond to a description，return True/False 
-    * input:str *EBI-id*,str *EBI-id*
+* predict_sim(str *EBI-id*,str *description*)
+	* a function judging whether an *EBI-id* correspond to a *description*，return True/False 
+    * input:str *EBI-id*(the accession number of the interaction in the IntAct database),str *description*(a senctence describing an interaction)
 	* output:bool *True/False*
 
-* description(str *EBI-id*)
-	* a fuction getting the description corresponding to idcode
+* tran_stat(str *EBI-id*)
+	* a fuction getting the *description* corresponding to an *EBI-id*
 	* input:str *EBI-id*
 	* return:str *description*
 
